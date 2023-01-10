@@ -1,0 +1,11 @@
+@function collection-color($key) {
+  @return map-get($collection-colors, $key);
+}
+
+@function collection-shadows($key: "primary") {
+  @return map-get($collection-shadows, $key);
+}
+
+@function collection-gaps($key: "primary") {
+  @return map-get($collection-gaps, $key);
+}

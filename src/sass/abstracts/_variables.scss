@@ -1,0 +1,33 @@
+$collection-colors: (
+  "main-color": #499A18,
+  "action-color": #E06733,
+  "main-text-color": #717171,
+  "text-color": #636060,
+
+
+  "bg-section": #EDF2EC,
+  "links-nav": #010201,
+);
+
+$collection-shadows: (
+  "modal-shadow": #{0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2)},
+  "card-shadow": #{0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16)},
+  "btn-shadow": #{0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12)},
+  "order-btn": #{0px 4px 4px rgba(0, 0, 0, 0.15)},
+);
+$collection-gaps: (
+  "card-set-gap": 30px,
+  "card-respons-set-gap": 30px,
+);
+
+$mobile: 380px;
+$to-tablet: 767px;
+$tablet: 768px;
+$to-desktop: 1439px;
+$desktop: 1440px;
