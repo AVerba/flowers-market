@@ -1,0 +1,38 @@
+.about {
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+
+.about-content {
+  width: 50%;
+  //margin-left: 109px;
+
+  &__title {
+    margin: 161px 86px 0 0;
+    font-family: 'Inika', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: calc(52 / 40);
+    color: collection-color(action-color);
+
+    span {
+      color: collection-color(main-color);
+    }
+  }
+
+  &__content {
+    margin: 40px 78px 0 0;
+    padding-bottom: 155px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    color: collection-color(text-color);
+  }
+}
+
