@@ -1,0 +1,18 @@
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+
+  margin-left: auto;
+  margin-right: auto;
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 750px;
+  }
+
+  @include for-size(desktop) {
+    width: 1422px;
+  }
+}
