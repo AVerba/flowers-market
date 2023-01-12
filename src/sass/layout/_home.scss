@@ -4,6 +4,13 @@
   .container {
     display: flex;
     justify-content: flex-end;
+    @include background-pos(no-repeat,left 87px top 140px, auto);
+    @include for-size(desktop) {
+      background-image: url(../images/home/desktop/leafs.png);
+      @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background-image: url(../images/home/desktop/leafs@2x.png);
+      }
+    }
   }
 
   .content {
