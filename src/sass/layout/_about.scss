@@ -3,6 +3,21 @@
     display: flex;
     justify-content: flex-start;
   }
+  @include background-pos(no-repeat, 70% 50%, auto);
+  @include for-size(desktop) {
+    background-image: url(../images/about/desktop/houseplant.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background-image: url(../images/about/desktop/houseplant@2x.jpg);
+    }
+  }
+
+
+
+
+
+
+
 }
 
 
