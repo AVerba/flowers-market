@@ -8,11 +8,12 @@
 
   .content {
     width: 50%;
+    padding-left: 68px;
 
     .title {
-      margin: 98px 109px 0 0;
+      margin: 98px 81px 0 0;
 
-      font-family: 'Inter';
+      font-family: 'Inter', serif;
       font-style: normal;
       font-weight: 700;
       font-size: 45px;
@@ -25,8 +26,8 @@
     }
 
     .sub-title {
-      margin: 42px 138px 0 0;
-      font-family: 'Inter';
+      margin: 42px 100px 0 0;
+      font-family: 'Inter', serif;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
