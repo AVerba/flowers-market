@@ -1,0 +1,56 @@
+.home {
+  background-color: collection-color(main-background);
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content {
+    width: 50%;
+
+    .title {
+      margin: 98px 109px 0 0;
+
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: calc(50 / 45);
+      color: collection-color(main-text-color);
+
+      span {
+        color: collection-color(main-color);
+      }
+    }
+
+    .sub-title {
+      margin: 42px 138px 0 0;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: calc(35 / 20);
+      color: collection-color(text-color);
+    }
+
+    .home-btn {
+      margin-top: 48px;
+      margin-bottom: 94px;
+
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+      &:active {
+        background-color: collection-color(action-color);
+      }
+      &:hover {
+        color: #ffffff;
+        background-color: collection-color(action-color);
+      }
+    }
+
+
+  }
+}

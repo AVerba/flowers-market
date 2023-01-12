@@ -3,7 +3,10 @@
 @import "base/base";
 @import "abstracts/mixins";
 @import "abstracts/functions";
-@import "base/container";
+@import "components/container";
+@import "components/buttons";
 
-@import "header";
+
+@import "layout/header";
+@import "layout/home";
 
