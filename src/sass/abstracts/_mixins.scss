@@ -16,6 +16,7 @@
   line-height: calc(#{$lineHeight} / #{$fontSize});
 }
 @mixin background-pos($repeat: no-repeat, $position: center, $size: cover) {
+//, $position: center
   background-repeat: $repeat;
   background-position: $position;
   background-size: $size;
