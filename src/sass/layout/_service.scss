@@ -1,5 +1,6 @@
 .service {
   background-color: collection-color(main-background);
+  padding: 40px 0 121px 0;
 
 }
 
@@ -9,7 +10,7 @@
 .navigation {
   display: flex;
   align-items: center;
-  padding-top: 40px;
+
   // .navigation__title
   &__title {
     display: flex;
@@ -60,6 +61,7 @@
 
   }
 }
+
 .list {
   padding: 0;
   margin: 0;
@@ -69,14 +71,16 @@
   flex-wrap: wrap;
   text-decoration: none;
   margin-left: calc(-1 * #{collection-gaps(card-set-gap)});
-  margin-top: calc(-1 * #{collection-gaps(card-set-gap)});
-  & > .item{
+  margin-top: calc(-1 * #{collection-gaps(card-set-top-gap)});
+
+  & > .item {
     @include for-size(desktop) {
       flex-basis: calc(100% / 3 - #{collection-gaps(card-set-gap)});
     }
     margin-left: #{collection-gaps(card-set-gap)};
-    margin-top: #{collection-gaps(card-set-gap)};
+    margin-top: #{collection-gaps(card-set-top-gap)};
   }
+
   // .list__item
   &__item {
   }
@@ -87,15 +91,18 @@
   border: 1px solid #E3E1D5;
   border-radius: 20px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover{
+  overflow: hidden;
+
+  &:hover {
     box-shadow: collection-shadows(card-shadow);
   }
+
   &__card {
   }
 
   // .item__img
   &__img {
-    overflow: hidden;
+
 
   }
 
@@ -109,11 +116,11 @@
 
   // .item__type
   &__type {
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(20/20);
+    line-height: calc(20 / 20);
     color: collection-color("action-color");
     margin-top: 10px;
 
@@ -121,7 +128,7 @@
 
   // .item__title
   &__title {
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
