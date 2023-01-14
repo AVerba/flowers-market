@@ -1,0 +1,38 @@
+.price {
+  // .price__row
+  &__row {
+    margin-top: 40px;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding-bottom: 150px;
+  }
+
+  .container {
+  }
+
+  .sub-title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(48 / 40);
+    color: #000000;
+  }
+
+  .title {
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(50 / 40);
+    color: #000000;
+
+    span {
+      color: collection-color(main-color);
+    }
+  }
+
+}
+
