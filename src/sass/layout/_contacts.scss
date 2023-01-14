@@ -1,0 +1,20 @@
+.contacts {
+  background-color: collection-color("main-background");
+
+  .container {
+  }
+
+  // .contacts__title
+  &__title {
+    padding-top: 60px;
+    text-align: center;
+
+    font-family: 'Inika', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(52 / 40);
+    color: collection-color("main-color");
+  }
+}
+
