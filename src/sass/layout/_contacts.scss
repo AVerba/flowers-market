@@ -2,11 +2,19 @@
   background-color: collection-color("main-background");
 
   .container {
+    @include background-pos(no-repeat,left 87px left bottom, auto);
+    @include for-size(desktop) {
+      background-image: url(../images/contacts/desktop/bg.png);
+      @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background-image: url(../images/contacts/desktop/bg@2x.png);
+      }
+    }
   }
 
   // .contacts__title
   &__title {
     padding-top: 60px;
+    padding-bottom: 200px;
     text-align: center;
 
     font-family: 'Inika', sans-serif;
