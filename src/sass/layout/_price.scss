@@ -6,10 +6,18 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 150px;
+    @include background-pos(no-repeat,right 50px top 140px, auto);
+    @include for-size(desktop) {
+      background-image: url(../images/price/desktop/leafs-bg.png);
+      @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background-image: url(../images/price/desktop/leafs-bg@2x.png);
+      }
+    }
   }
 
-  .container {
-  }
+
+
+
 
   .sub-title {
     font-family: 'Inter', sans-serif;
