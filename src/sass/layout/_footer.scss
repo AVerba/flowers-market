@@ -3,8 +3,22 @@
   &__row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px 0;
+    flex-direction: column;
+    padding: 22px 0;
+
+
+    @include for-size(tablet) {
+      padding: 33px 0;
+    }
+    @include for-size(desktop) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 0;
+
+    }
+
+
   }
 
   // .footer__data
@@ -13,11 +27,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: calc(50 / 20);
+    line-height: calc(24 / 20);
+    @include for-size(desktop) {
+      line-height: calc(50 / 20);
+    }
 
     span {
       margin: 0 20px;
-
     }
   }
 
@@ -27,7 +43,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: calc(50 / 20);
+    padding: 16px 0;
+    line-height: calc(24 / 20);
+    @include for-size(desktop) {
+      line-height: calc(50 / 20);
+      padding: 0;
+    }
+
   }
 
   // .footer__social
