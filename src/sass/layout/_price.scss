@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 150px;
-    @include background-pos(no-repeat,right 50px top 140px, auto);
+    @include background-pos(no-repeat, right 50px top 140px, auto);
     @include for-size(desktop) {
       background-image: url(../images/price/desktop/leafs-bg.png);
       @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -14,9 +14,6 @@
       }
     }
   }
-
-
-
 
 
   .sub-title {
@@ -42,10 +39,13 @@
     }
   }
 }
+
 .price-accordion {
+
 }
 
 .accordion {
+  max-width: 332px;
   display: flex;
   flex-direction: column;
   padding: 34px 41px;
@@ -54,35 +54,41 @@
   // .accordion__item
   &__item {
   }
+
   &__item + &__item {
     margin-top: 32px;
   }
 }
 
-.item {
-  // .item__header
+.ac-item {
+  text-align: center;
+  padding: 16px 0;
+
+  background: #EDF2EC;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+
+    box-shadow: collection-shadows(btn-shadow);
+  }
+
+  // .ac-item__header
   &__header {
     display: flex;
     align-items: center;
-    padding: 16px 40px;
     justify-content: space-around;
-
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: calc (20 / 20);
-
-    background: #EDF2EC;
-    border-radius: 20px;
-    border-color: #EDF2EC;
   }
 
-  // .item__icon
+  // .ac-item__icon
   &__icon {
+    display: flex;
+    margin: 0;
+    padding: 0;
   }
 
-  // .item__description
+  // .ac-item__description
   &__description {
   }
 }
