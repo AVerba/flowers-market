@@ -1,6 +1,6 @@
 .price {
   .container {
-    @include background-pos(no-repeat, right 100px top 190px, auto);
+    @include background-pos(no-repeat, right 125px top 236px, auto);
     @include for-size(desktop) {
       background-image: url(../images/price/desktop/leafs-bg.png);
       @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -15,17 +15,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 150px;
-
   }
 
   &__content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    padding-top: 6px;
     padding-bottom: 128px;
   }
-
 
   .sub-title {
     font-family: 'Inter', sans-serif;
