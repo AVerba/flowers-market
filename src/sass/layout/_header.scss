@@ -1,11 +1,17 @@
-.header{
-  background-color: collection-color(main-background);
-  .container{
+.header {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  background-color: inherit;
+  //background-color: collection-color(main-background);
+
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -18,32 +24,40 @@
   text-decoration: none;
   color: collection-color(links-nav);
 }
-.menu{
+
+.menu {
   &__list {
     display: flex;
+
     li {
-      font-family: 'Inika', serif;
+      font-family: Inter, serif;
+      font-size: 45px;
       font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: calc(50 / 16);
+      font-weight: 700;
+
+      line-height: calc(50 / 45);
       cursor: pointer;
     }
+
     li + li {
       margin-left: 44px;
     }
   }
+
   &__link {
     position: relative;
     display: block;
+
     padding: 42px 0;
     @include font-modify(#000, 14, 500, 0.02em, 16);
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   &__link:hover {
     color: collection-color(action-color);
   }
+
   &__link:focus {
     outline-color: collection-color(action-color);
     color: collection-color(action-color);
